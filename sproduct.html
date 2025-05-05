@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Details</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+        <link rel="stylesheet" href="style.css">
+
+        <style>
+            /* internal styles */
+            .sproduct select{
+                display: block;
+                padding: 5px 10px;
+            }
+            .sproduct input{
+                width: 50px;
+                height: 40px;
+                padding-left: 10px;
+                font-size: 16px;
+                margin-right: 10px;
+            }
+            .sproduct input:focus{
+                outline: none;
+            }
+
+            .buy-btn{
+                background-color: coral;
+                opacity: 1;
+                transition: 0.3s all;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-1 fixed-top">            
+            <div class="container">
+              <img src="C:\Users\Kayan\Desktop\Graduation Project\Images\Logo1.png" alt="">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i id="bar" class="fas fa-bars"></i></span>
+              </button>
+              <div class="search-container">
+                <input type="text" placeholder="Search for clothes, accessories..." class="search-input" />
+                <button class="search-button">
+                  <i class="fas fa-search"></i>
+                </button>     
+              </div>
+              <button class="image-search-button">
+                <i class="fal fa-image"></i> 
+               </button>
+
+               <div class="upload-container">
+                <div class="upload-box" id="uploadBox">
+                  <p>Add a photo from your device</p>
+                  <p>or</p>
+                  <p><strong>Drag and drop a photo here</strong></p>
+                  <input type="file" id="fileInput" hidden />
+                </div>
+              </div>
+
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="shop.html">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Cart</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Sign up</a>
+                  </li>
+                </ul>  
+              </div>
+            </div>
+        </nav>
+
+        <section class="container sproduct my-5 pt-5">
+            <div class="row mt-5">
+                <div class="col-lg-5 col-md-12 col-12">
+                    <img class="img-fluid w-100" src="images/P3.png" alt="">
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-12" >
+                    <h6>Home / T-shirt</h6>
+                    <h3 class="py-4">Men's Fashion T-shirt</h3>
+                    <h2>200 LE</h2>
+                    <select class="my-3">
+                        <option>Select Size</option>
+                        <option>S</option>
+                        <option>L</option>
+                        <option>XL</option>
+                        <option>XXL</option>
+                    </select>
+                    <input type="number" value="1">
+                    <button class="buy-btn" >Add To Cart</button>
+                    <h4 class="mt-5 mb-5">Product details</h4>
+                    <span>Elevate your everyday style with this classic men’s t-shirt. Made from high-quality, breathable cotton for all-day comfort, it features a relaxed fit, durable stitching, and a timeless design that pairs effortlessly with jeans, joggers, or shorts. Whether you're out for a casual hangout or lounging at home, this tee is your go-to essential.</span>
+                
+                </div>
+            </div>
+
+        </section>
+
+        <section id="featured" class="my-5 pb-5">
+            <div class="container  text-center mt-5 py-5">
+              <h3>Related Products</h3>
+              <hr class="mx-auto">
+            </div>
+            <div class="row mx-auto container-fluid">
+              <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="Images/P1.png" alt="">
+                <h5 class="p-name">Shein Suit</h5>
+                <h4 class="p-price">200LE</h4>
+                <button class="buy-btn">Buy now</button>
+              </div>
+              <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="Images/P2.png" alt="">
+                <h5 class="p-name">Shein Suit</h5>
+                <h4 class="p-price">200LE</h4>
+                <button class="buy-btn">Buy now</button>
+              </div>
+              <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="Images/P3.png" alt="">
+                <h5 class="p-name">Shein Suit</h5>
+                <h4 class="p-price">200LE</h4>
+                <button class="buy-btn">Buy now</button>
+              </div>
+              <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="Images/P3.png" alt="">
+                <h5 class="p-name">Shein Suit</h5>
+                <h4 class="p-price">200LE</h4>
+                <button class="buy-btn">Buy now</button>
+              </div>
+            
+  
+              
+          </section>
+  
+
+
+
+
+
+        <footer style="
+  background-color: #111;
+  color: #fff;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: 'Poppins', sans-serif;
+">
+
+  <!-- Left: Logo + Description -->
+  <div style="max-width: 300px;">
+    <img src="your-logo.png" alt="FashioNear" style="width: 150px; margin-bottom: 20px;">
+    <p style="font-size: 14px; line-height: 1.6;">
+      Discover fashion your way. Search by image or text to find clothes, accessories, and similar styles from across our collection.
+    </p>
+  </div>
+
+  <!-- Center: Navigation -->
+  <div style="min-width: 180px; margin-top: 20px;">
+    <h4 style="font-size: 16px; margin-bottom: 10px;">Explore</h4>
+    <ul style="list-style: none; padding: 0; font-size: 14px;">
+      <li><a href="#" style="color: #fff; text-decoration: none;">Home</a></li>
+      <li><a href="#" style="color: #fff; text-decoration: none;">Shop</a></li>
+      <li><a href="#" style="color: #fff; text-decoration: none;">Categories</a></li>
+      <li><a href="#" style="color: #fff; text-decoration: none;">Search by Image</a></li>
+    </ul>
+  </div>
+
+  <!-- Right: Contact / Social -->
+  <div style="min-width: 180px; margin-top: 20px;">
+    <h4 style="font-size: 16px; margin-bottom: 10px;">Get in Touch</h4>
+    <p style="font-size: 14px;">support@FashioNear.com</p>
+    <div style="margin-top: 10px;">
+      <a href="#"><img src="fb-icon.svg" alt="Facebook" style="width: 20px; margin-right: 10px;"></a>
+      <a href="#"><img src="insta-icon.svg" alt="Instagram" style="width: 20px;"></a>
+    </div>
+  </div>
+
+  <!-- Bottom: Copyright -->
+  <div style="width: 100%; text-align: center; margin-top: 40px; font-size: 13px; color: #aaa;">
+    © 2025 FashioNear. All rights reserved.
+  </div>
+
+        </footer>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+            integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+            integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+            crossorigin="anonymous"></script>
+
+        <script>
+            // script for image change on click
+            var MainImg=document.getElementById('MainImg')
+            var smallimg = document.getElementsByClassName()
+
+            smallimg[0].onclick = function(){
+                MainImg.src = smallimg[0].scr;
+            }
+        </script>
+    </body>
+
+</html>
